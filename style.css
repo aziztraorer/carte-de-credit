@@ -1,0 +1,267 @@
+body
+{
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size:40% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+
+}
+
+.contenaire
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carte-front
+{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.carte-front img
+{
+    width: 100%;
+
+}
+.detail-fond
+{
+    position:absolute;
+    width: 90%;
+    bottom: 0;
+
+}
+
+.detail-fond .numcart
+{
+    position: relative;
+    top: 40px;
+    font-weight: 5px;
+    text-align: center;
+}
+.detail-fond .detail-perso
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cecle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.cecle .cecle-gros
+ {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.cecle .cecle-petit
+{
+    color: rgba(240, 248, 255, 0.664);
+    border: 1px solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.carte-end
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color:white;
+    left: 120px;
+}
+.carte-end img
+{
+    width: 100%;
+}
+.carte-end p
+{
+    right: 75px;
+    position: relative;    
+}
+form
+{
+    font-size: 12px;
+    float: left;
+    left: 150px;
+    position: relative;
+}
+
+form label
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+form input
+{
+    width: 400px;
+    height: 40px;
+    border: 1px solid rgba(135, 135, 253, 0.767);
+    border-radius: 15px;
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+form .dd 
+{
+    width: 90px;
+}
+
+form #cvc
+{
+    width: 150px;
+}
+form .inputcvc
+{
+    display: grid;
+    position: absolute;
+    right: 0;
+    bottom: 33px;
+
+}
+form .inputcvc label
+{
+    margin: 0;
+    padding: 0;
+}
+.ckeckactive
+{
+    visibility: hidden;
+}
+
+.verifier
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    display: none;
+    
+}
+button
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background-color:rgb(60, 7, 90) ;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    body
+    {
+        background-image: url(/images/bg-main-mobile.png);
+        background-size: 100% 30%;
+        overflow-y: hidden;
+        height:100vh;
+
+    }
+    .verifier
+    {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .contenaire
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .carte-front
+    {
+        font-size: 20px;
+        width: 70%;
+        top: 4em;
+        float: left;
+        left: 5px;
+        position: relative;
+        z-index: 1;
+    }
+    .carte-end
+    {
+        width: 70%;
+        left: auto;
+        z-index: 0;
+        position: relative;
+        float: right;
+        right:30px;
+        top: -10em;
+ 
+    }
+
+
+    /* inpu */
+    form{
+        top: -15px;
+        font-size: 1px;
+        left: 0;
+        position: relative;
+        width: 90%;
+    }
+    
+    form label
+    {
+        font-size: 16px;
+    }
+    form .infocarde
+    {
+        width: 270px;
+    }
+    form input
+    {
+        height: 40px;
+    }
+    form .dd 
+    {
+       
+        width: 50px;
+        margin-right: 5px;
+    }
+    form #cvc
+    {
+        width: 100px;
+        
+    }
+    form .inputcvc
+    {
+
+        bottom: 53px;
+        left: 170px;
+    }
+    .cecle .cecle-gros
+ {
+    width: 30px;
+    height: 30px;
+}
+
+.cecle .cecle-petit
+{
+
+    width: 10px;
+    height: 10px;
+}
+
+
+
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>carte de credit</title>
+</head>
+<body>
+    <div class="contenaire" >
+        <div class="carte">
+                <div class="carte-front" >
+
+                    <div class="cecle">
+                        <div class="cecle-gros"></div>
+                        <div class="cecle-petit"></div>
+                    </div>
+
+                    <img src="./images/bg-card-front.png" alt="">
+                        <div class="detail-fond">
+                            <P class="numcart">9591 ****  **** 1011</P>
+                            <div class="detail-perso"> 
+                                <p class="nom">aziz...</p> 
+                                <p class="dateexp">00/00</p>
+                            </div>
+                    </div>
+                </div>
+
+            <div class="carte-end">
+                <img src="./images/bg-card-back.png" alt="" srcset="">
+                <p class="cvc">000</p>
+            </div>
+        </div>
+            <form action="">
+                <div class="verifier">
+                    <img src="./images/icon-complete.svg" alt="" class="ckeck">
+                    <h2>merci</h2>
+                    <p>Votre carte de crédit a bien été validée. Vous pouvez maintenant débuter votre achat.</p>
+                </div>
+                <label for="nom" class="desactive">nom et prenom</label><br>
+                <input type="text" id="nom" name="nom" class="infocarde desactive"><br>
+                <label for="numero" class="desactive">numero de carte</label><br>
+                <input type="number" id="numero" name="numero" class="infocarde desactive" required ><br>
+                <div class="date desactive">
+                   <div class="plusdd">
+                       <label for="exp" class="desactive">Exp.Date(MM/YY)</label><br>
+                       <input type="number" class="dd mois desactive" placeholder="MM"  required >
+                       <input type="number" class="dd annee desactive" placeholder="YY" required >
+                   </div>
+                    <div class="inputcvc desactive">
+                    <label for="cvc desactive">CVC</label>
+                    <input type="number" class="desactive" name="" id="cvc" placeholder="e.g. 123" required><br>
+                </div>
+            </div>
+                <button type="submit">Confirm</button>
+            </form>
+    </div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
